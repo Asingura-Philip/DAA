@@ -8,38 +8,30 @@
 
 /*
 psuedo code
-get array
-loop through the elements in an array 
-assign first element to variable
+create function to check for max element
+check for first element [0] in array and store value in variable
+loop through array checking if stored value is bigger than next value
 if next element is bigger than variable,re-assign variable to that element
-if its smaller, check the next element
-print out the variable
+otherwise continue to check next value
+print out the max value
 
+in main
+check for length of array
+assign length to variable
+print out all elements of array
+call findmax function
+print max element of array
 
 */
-//int main() {
-//	
-//	int myArray[] = {2,4,6,3,7,5};
-//	int length = sizeof(myArray) / sizeof(myArray[0]);
-// 	printf("%d",length);
-// 	int val = length
-//    printf("The length of the array is: %d\n", length);
-//    int i;
-//    for(i=0;i<length;i++){
-//    	printf(myArray[i]);
-//	};
-//	
-//	return 0;
-//}
-#include <stdio.h>
 
-// Function to find the maximum element in an array
+
+
 int findMax(int arr[], int size) {
-    int max = arr[0]; // Initialize max to the first element
+    int max = arr[0];
     int i;
-    for (i = 1; i < size; i++) { // Start from the second element
+    for (i = 1; i < size; i++) {
         if (arr[i] > max) {
-            max = arr[i]; // Update max if current element is greater
+            max = arr[i]; 
         }
     }
     return max;
@@ -47,20 +39,20 @@ int findMax(int arr[], int size) {
 
 int main() {
     int myArray[] = {2, 4, 6, 3, 7, 5};
-    int length = sizeof(myArray) / sizeof(myArray[0]); // Calculate the length of the array
+    int length = sizeof(myArray) / sizeof(myArray[0]); 
 
-    // Print the length of the array
+    
     printf("The length of the array is: %d\n", length);
 
-    // Print the elements of the array
+    
     printf("The elements of the array are: ");
     int i;
     for (i = 0; i < length; i++) {
         printf("%d ", myArray[i]);
     }
-    printf("\n"); // Move to the next line after printing all elements
+    printf("\n");
 
-    // Find and print the maximum element in the array
+    
     int max = findMax(myArray, length);
     printf("The maximum element in the array is: %d\n", max);
 
