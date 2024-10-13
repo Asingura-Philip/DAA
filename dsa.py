@@ -1,5 +1,5 @@
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
+# =======
 # Selection sort in Python
 # time complexity O(n*n)
 #sorting by finding min_index
@@ -71,4 +71,4 @@ if __name__ == "__main__":
     for val in arr:
         print(val, end=" ") 
          
->>>>>>> 4fb24a31ed7224f7b5e273ed34d4715b58de6d68
+# >>>>>>> 4fb24a31ed7224f7b5e273ed34d4715b58de6d68
